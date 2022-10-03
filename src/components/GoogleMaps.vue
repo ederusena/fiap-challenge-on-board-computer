@@ -15,7 +15,7 @@ export default {
     }))
     const otherPos = ref(null)
 
-    const loader = new Loader({ apiKey: import.meta.env.GOOGLE_MAPS_API_KEY })
+    const loader = new Loader({ apiKey: 'AIzaSyAErN9LhN7RHrGwHD6QcKaF0eBISwslJdA' })
     const mapDiv = ref(null)
     let map = ref(null)
     let clickListener = null

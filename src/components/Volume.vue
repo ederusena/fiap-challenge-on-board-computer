@@ -1,8 +1,8 @@
 <template>
-    <a class="navbar-brand" href="#">
-        <mdicon  size="50" @click="decrement" name="ChevronLeft" />
-        <strong class="display-6">{{ volume }}</strong>
-        <mdicon size="50"  @click="increment" name="ChevronRight" />
+    <a class="navbar-brand d-flex " href="#">
+        <mdicon class="align-self-center" size="40" @click="decrement" name="ChevronLeft" />
+        <strong class="display-6 align-self-center">{{ volume }}</strong>
+        <mdicon class="align-self-center" size="40"  @click="increment" name="ChevronRight" />
     </a>
 </template>
 
