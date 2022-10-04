@@ -1,19 +1,23 @@
 <template>
   <div class="d-flex offcanvas-body small">
-    <OpenDoor />
+    <nav class="navbar navbar-light bg-light">
+      <form class="form-inline">
+        <OpenDoor />
 
-    <LightHandle />
+        <LightHandle />
 
-    <a class="navbar-brand" href="#">
-      <mdicon size="40" name="CarLightFog" />
-    </a>
+        <a class="navbar-brand" href="#">
+          <mdicon size="40" name="CarLightFog" />
+        </a>
 
-    <a class="navbar-brand" href="#">
-      <mdicon size="40" name="CarLightDimmed" />
-    </a>
-    <a class="navbar-brand" href="#">
-      <mdicon size="40" name="HazardLights" />
-    </a>
+        <a class="navbar-brand" href="#">
+          <mdicon size="40" name="CarLightDimmed" />
+        </a>
+        <a class="navbar-brand" href="#">
+          <mdicon size="40" name="HazardLights" />
+        </a>
+      </form>
+    </nav>
   </div>
 </template>
 
