@@ -1,13 +1,13 @@
 <template>
     <div class="d-flex flex-column">
         <a class="navbar-brand" href="#">
-            <mdicon size="40" name="CarLightFog" />
+            <mdicon class="icons-on" size="40" name="CarLightFog" />
         </a>
         <a class="navbar-brand" href="#">
             <mdicon class="icons-on" size="40" name="CarLightDimmed" />
         </a>
         <a class="navbar-brand" href="#">
-            <mdicon class="icons-off" size="40" name="HazardLights" />
+            <mdicon class="icons-off" size="40" name="Seatbelt" />
         </a>
     </div>
 </template>
