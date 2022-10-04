@@ -47,9 +47,9 @@ import { ref, computed } from "vue";
 const doorStatus = ref(false);
 const toast = useToast();
 
-const messageHandle = computed (() => {
+const messageHandle = computed(() => {
   if (doorStatus.value) {
-    return  "Deseja Fechar o portão da garagem?";
+    return "Deseja Fechar o portão da garagem?";
   } else {
     return "Deseja Abrir o portão da garagem?";
   }

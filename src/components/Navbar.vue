@@ -1,13 +1,13 @@
 <template>
   <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a  @click="handleMessageToast('Carro Ligando!')" class="navbar-brand" href="#">
         <mdicon size="40" name="car" />
       </a>
 
       <Volume />
 
-      <a class="navbar-brand" href="#">
+      <a  @click="handleMessageToast('Calendário Aberto!')" class="navbar-brand" href="#">
         <mdicon size="40" name="calendar" />
       </a>
       <div class="d-flex">
@@ -21,14 +21,14 @@
           <mdicon size="40" name="menu" />
         </a>
       </div>
-      <a class="navbar-brand" href="#">
+      <a  @click="handleMessageToast('Spotify tocando!')" class="navbar-brand" href="#">
         <mdicon size="40" color="green" name="spotify" />
       </a>
-      <a class="navbar-brand" href="#">
+      <a  @click="handleMessageToast('lista de Mensagens!')" class="navbar-brand" href="#">
         <mdicon size="40" name="message" />
       </a>
 
-      <a class="navbar-brand" href="#">
+      <a  @click="handleMessageToast('Ajuste de Volume!')" class="navbar-brand" href="#">
         <mdicon size="40" name="volume-high" />
       </a>
     </div>
@@ -56,6 +56,16 @@
 <script setup>
 import Volume from "./Volume.vue";
 import Aplicativos from "./Aplicativos.vue";
+
+import { useToast } from "vue-toastification";
+const toast = useToast();
+
+const handleMessageToast = (value) => {
+    toast.success(value, {
+      timeout: 2000,
+    });
+};
+
 
 </script>
 

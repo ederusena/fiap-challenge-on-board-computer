@@ -6,14 +6,26 @@
 
         <LightHandle />
 
-        <a class="navbar-brand" href="#">
+        <a
+          @click="handleMessageToast('Luzes de neblina')"
+          class="navbar-brand"
+          href="#"
+        >
           <mdicon size="40" name="CarLightFog" />
         </a>
 
-        <a class="navbar-brand" href="#">
+        <a
+          @click="handleMessageToast('Luzes principais')"
+          class="navbar-brand"
+          href="#"
+        >
           <mdicon size="40" name="CarLightDimmed" />
         </a>
-        <a class="navbar-brand" href="#">
+        <a
+          @click="handleMessageToast('Luzes de avisos')"
+          class="navbar-brand"
+          href="#"
+        >
           <mdicon size="40" name="HazardLights" />
         </a>
       </form>
@@ -24,6 +36,15 @@
 <script setup lang="ts">
 import OpenDoor from "./apps/OpenDoor.vue";
 import LightHandle from "./apps/LightHandle.vue";
+
+import { useToast } from "vue-toastification";
+const toast = useToast();
+
+const handleMessageToast = (value) => {
+  toast.success(value, {
+    timeout: 2000,
+  });
+};
 </script>
 
 <style scoped></style>
